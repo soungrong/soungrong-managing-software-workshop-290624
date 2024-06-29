@@ -1,0 +1,9 @@
+.discord-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px black solid;
+  text-align: center;
+}
