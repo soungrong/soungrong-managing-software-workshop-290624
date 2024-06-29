@@ -4,11 +4,13 @@ import "~/app.css";
 
 export const loader = () => {
   // GET requests are loaded here
+  // https://remix.run/docs/en/main/route/loader
   return { notice: "Send a message to Discord!" };
 };
 
 export const action = async ({ request }) => {
   // POST requests are loaded here
+  // https://remix.run/docs/en/main/route/action
   const DISCORD_API_URL =
     "https://discord.com/api/webhooks/1256277435692093531/7bCCSYi_NUwanTMtTgc-MGWwTasDPbscl4Xwc1P_Qn3wVAo9vQSZF1w8O44zFVD-DxmK";
 
@@ -29,6 +31,7 @@ export const action = async ({ request }) => {
 export default function Index() {
   // GET request data is loaded here
   // Along with your HTML and other frontend code.
+  // https://remix.run/docs/en/main/discussion/data-flow#route-component
   const loaderData = useLoaderData();
 
   return (
