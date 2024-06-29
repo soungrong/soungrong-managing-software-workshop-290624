@@ -14,7 +14,7 @@ export const action = async ({ request }) => {
 
   const form = await request.formData();
   await fetch(DISCORD_API_URL, {
-    method: "POST",
+    method: "GET",
     headers: {
       "Content-Type": "application/json",
     },
@@ -27,6 +27,8 @@ export const action = async ({ request }) => {
 };
 
 export default function Index() {
+  // GET request data is loaded here
+  // Along with your HTML and other frontend code.
   const loaderData = useLoaderData();
 
   return (
