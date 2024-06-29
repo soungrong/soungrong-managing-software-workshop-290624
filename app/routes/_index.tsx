@@ -3,10 +3,12 @@ import { useLoaderData } from "@remix-run/react";
 import "~/app.css";
 
 export const loader = () => {
+  // GET requests are loaded here
   return { notice: "Send a message to Discord!" };
 };
 
 export const action = async ({ request }) => {
+  // POST requests are loaded here
   const DISCORD_API_URL =
     "https://discord.com/api/webhooks/1256277435692093531/7bCCSYi_NUwanTMtTgc-MGWwTasDPbscl4Xwc1P_Qn3wVAo9vQSZF1w8O44zFVD-DxmK";
 
